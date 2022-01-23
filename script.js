@@ -6,7 +6,6 @@ $("#currentDay").append(moment().format("dddd, MMMM Do"));
 
 // Store current hour in a variable
 const hour = Number(moment().format("H"));
-// const hour = 12;
 
 let taskList = {};
 
@@ -26,16 +25,6 @@ function loadTasks() {
       "5pm": "",
     };
   }
-
-  const pairs = Object.entries(taskList);
-
-  console.log(pairs);
-
-  for (let i = 0; i < pairs.length; i++) {
-      console.log(pairs[i][0]) // needs to be used as a reference of where we're going
-      console.log(pairs[i][1]) // is what we will put in the 'where we're going'
-  }
-
 }
 
 loadTasks();
@@ -85,6 +74,5 @@ $(".saveBtn").click(function () {
   const newTask = {};
   newTask[time] = taskText;
   Object.assign(taskList, newTask);
-  console.log(taskList);
   localStorage.setItem("tasks", JSON.stringify(taskList));
 });
