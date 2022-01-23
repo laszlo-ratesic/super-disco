@@ -1,0 +1,86 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-style: italic;
+  background: linear-gradient(rgb(0, 0, 0),rgba(10, 10, 10, 0.918)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px);
+}
+
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+.jumbotron {
+  background: linear-gradient(rgba(10,10,10,.5),rgba(0,0,0,.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
+		url('https://images.unsplash.com/photo-1634703080363-98f94e5a1076?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80');
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: #fcec0c;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.sub {
+  color: #d1c5c0;
+	letter-spacing: 1em;
+}
+
+.lead {
+  letter-spacing: 0.1em;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 2px solid #ff00c1;
+}
+
+.hour {
+  background-color: #000;
+  color: #d8bc66;
+  padding-top: 1em;
+  padding-left: 0.6em;
+  text-align: left;
+  font-size: 1.3em;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.past {
+  background-color: #d1c5c0;
+}
+
+.present {
+  background-color: #ff00c1;
+}
+
+.future {
+  background-color: #fcec0c;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #136377;
+  color: #d1c5c0;
+}
+
+.saveBtn:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+  color: #000000;
+}
