@@ -82,9 +82,10 @@ for (let i = 0; i < 9; i++) {
       $(newRow).append(textArea);
     }
 
-    // THIRD, create, size, and insert the save button
+    // THIRD, create, size, and add an icon to the save button
     else {
-      const button = $('<button class="saveBtn col-2 col-lg-1"></button>');
+      const button = $('<button class="saveBtn col-2 col-lg-1"><i class="far fa-save"></i></button>');
+      // Insert save button into time-block
       $(newRow).append(button);
     }
   }
