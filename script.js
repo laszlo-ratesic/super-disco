@@ -5,7 +5,7 @@ $('#currentDay').append(moment().format('dddd, MMMM Do'));
 // There will always be 12 blocks***
 
 // Store current hour in a variable
-const hour = moment().format('H');
+const hour = Number(moment().format('H'));
 
 // console.log(hour);
 
@@ -27,11 +27,12 @@ for (let i = 0; i < 13; i++) {
             $(newRow).append(newHour);
         }
         else if (j === 1) {
+            const hourNum = Number(newHour.attr('id'));
             const textArea = $('<textarea class="col-8 col-lg-10"></textarea>');
-            if (Number(newHour.attr('id')) < hour) {
+            if (hourNum < hour) {
                 textArea.addClass('past');
             }
-            else if (newHour.attr('id') === hour) {
+            else if (hourNum === hour) {
                 textArea.addClass('present');
             }
             else {
