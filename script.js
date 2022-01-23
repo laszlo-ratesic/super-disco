@@ -1,9 +1,5 @@
 $("#currentDay").append(moment().format("dddd, MMMM Do"));
 
-// Create a function that retrieves the current hour
-// Declare css classes of 12 timeblocks based on relative time
-// There will always be 12 blocks***
-
 // Store current hour in a variable
 const hour = Number(moment().format("H"));
 
@@ -28,11 +24,10 @@ function loadTasks() {
 }
 
 loadTasks();
-// console.log(hour);
 
 for (let i = 0; i < 9; i++) {
   // creates a container row
-  const newRow = $('<div class="row time-block"></div>').attr("id", i);
+  const newRow = $('<div class="row time-block"></div>');
   const newHour = $('<div class="hour col-2 col-lg-1"></div>').attr(
     "id",
     i + 9
