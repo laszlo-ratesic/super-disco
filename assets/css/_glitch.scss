@@ -25,7 +25,7 @@
     &::after {
         @include glitchCopy;
         left: -2px;
-        text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+        text-shadow: -2px 0 #00fff9, 2px 2px #00ff40;
         animation: glitch-scan 1s infinite linear alternate-reverse;
     }
 }
