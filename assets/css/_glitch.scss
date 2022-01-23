@@ -1,0 +1,16 @@
+@use 'sass:math';
+
+.glitch {
+    position: relative;
+    font-size: 5em;
+    animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-skew {
+    $steps: 10;
+    @for $i from 0 through $steps {
+        #{percentage($i*math.div(1, $steps))} {
+            transform: skew((random(10) - 5) + deg);
+        }
+    }
+}
