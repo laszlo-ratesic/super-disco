@@ -9,7 +9,7 @@ let taskList = {};
 
 function loadTasks() {
   // Retrieve saved tasks from localStorage
-  taskList = JSON.parse(localStorage.getItem("tasks"));
+  taskList = JSON.parse(localStorage.getItem("punkTasks"));
 
   // If nothing has been saved yet,
   // constructs the empty list object
@@ -110,5 +110,6 @@ $(".saveBtn").click(function () {
   // Updates our taskList to include the newly created object
   Object.assign(taskList, newTask);
   // Saves the new list to localStorage
-  localStorage.setItem("tasks", JSON.stringify(taskList));
+  localStorage.setItem("punkTasks", JSON.stringify(taskList));
 });
+
