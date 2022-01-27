@@ -1,9 +1,13 @@
+// UNCOMMENT THIS LINE FOR TESTING
+// OUTSIDE OF BUSINESS HOURS
+// const hour = 12;
+
 // Uses Moment JS to display current date
 $("#currentDay").append(moment().format("dddd, MMMM Do"));
 
 // Store current hour as a number
-// const hour = Number(moment().format("H"));
-const hour = 12;
+const hour = Number(moment().format("H"));
+
 
 // Initialize empty task list object
 let taskList = {};
