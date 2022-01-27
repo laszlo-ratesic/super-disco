@@ -2,7 +2,8 @@
 $("#currentDay").append(moment().format("dddd, MMMM Do"));
 
 // Store current hour as a number
-const hour = Number(moment().format("H"));
+// const hour = Number(moment().format("H"));
+const hour = 12;
 
 // Initialize empty task list object
 let taskList = {};
