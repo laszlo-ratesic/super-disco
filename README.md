@@ -24,7 +24,9 @@ Get ready to kick procrastination in the teeth, only instead of using your Doc M
 
 ## 📖 Description
 
-📓 This repo contains a simple calendar application created for the purpose of helping busy executives organize important events into a daily planner. WorkPunk aims to help people manage their time effectively whether they be employees, bosses, students, or radical anarchist cyberpunks.The app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
+📓 This repo contains a simple calendar application created for the purpose of helping busy executives organize important events into a daily planner. WorkPunk aims to help people manage their time effectively whether they be employees, bosses, students, or radical anarchist cyberpunks. 
+
+⚙️ The app runs in the browser and features dynamically updated HTML and CSS powered by jQuery along with styling in Sass using the Bootstrap library and Font Awesome for the icons.
 
 ## 🛠️ Installation
 Locate the dropdown menu labeled 'Code' to the left of the About section in the main page of this repository. From there, select your preferred cloning method from HTTPS, SSH, or the GitHub CLI. For this demonstration, we will be using the SSH method. Copy the link and head to your terminal. From the command line you should enter:
